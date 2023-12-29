@@ -1,0 +1,136 @@
+@media (max-width: 450px) {
+    .container {
+        padding: 25px 4%;
+    }
+    .logo {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    nav .fas {
+        display: block;
+    }
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        display: block;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .header-text {
+        margin-top: 90%;
+    }
+    .header-text p {
+        font-size: 19px;
+    }
+    .header-text h1 {
+        font-size: 28px;
+        margin: 20px 0;
+    }
+
+    /* -------about------- */
+
+    #about {
+        padding: 30px 0;
+    }
+    .about-sub-title {
+        font-size: 35px;
+    }
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-1 img {
+        width: 80%;
+        margin-left: 35px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .about-col-2 h1 {
+        margin-bottom: 8px;
+    }
+
+    /* --------services--------- */
+    #services {
+        height: auto;
+        padding: 30px 0;
+    }
+    .services-sub-title {
+        font-size: 35px;
+        margin-bottom: 6%;
+    }
+    .service-list-items {
+        width: 100vw;
+        height: 250px;
+        text-align: center;
+        padding: 5% 2.5%;
+        background: #262626;
+        margin: 10px 0;
+        border-radius: 7px;
+        font-size: 12px;
+    }
+
+    /* --------contact-------- */
+    #contact {
+        height: 40vh;
+    }
+    .contact-container {
+        flex-direction: column;
+        background: none;
+    }
+    .contact-container .contact-sub-title {
+        width: 100vw;
+        height: auto;
+        padding-left: 10px;
+    }
+    .contact-sub-title h1 {
+        font-size: 17px;
+    }
+    .contact-sub-title i {
+        color: #548687;
+    }
+    .heading {
+        font-size: 1.8em;
+        letter-spacing: 2px;
+    }
+    .heading::after {
+        height: 4px;
+        display: none;
+    }
+    .contact-sub-title p {
+        font-size: 17px;
+    }
+    .social-icons {
+        height: auto;
+        width: 100vw;
+        padding: 0 0 0 10px;
+    }
+    .social-icons ul li a {
+        font-size: 17px;
+    }
+    .social-icons ul li i {
+        font-size: 17px;
+        color: #548687;
+    }
+    .copyright {
+        font-size: 8px;
+        padding: 17px;
+    }
+}

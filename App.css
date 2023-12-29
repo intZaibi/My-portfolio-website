@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Sans-Serif";
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080808;
+    color: #fff;
+}
+header {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    background: url(./mobile.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+}
+.container {
+    padding: 35px 4%;
+    height: 6%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 140px;
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #fff;
+}
+.logo span {
+    color: #ff004f;
+}
+nav .fas {
+    display: none;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.header-text {
+    margin-top: 90%;
+}
+.header-text p {
+    font-size: 40px;
+}
+.header-text h1 {
+    font-size: 60px;
+    margin: 40px 0;
+}
+.header-text h1 span {
+    color: #ff004f;
+}
+
+/* about me */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1 {
+    flex-basis: 35%;
+}
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2 {
+    flex-basis: 60%;
+}
+.about-sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-links::after {
+    width: 80%;
+}
+.tab-content ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 15px;
+}
+.tab-content ul li span {
+    color: #b54769;
+    font-size: 20px;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active-tab {
+    display: block;
+}
+/* --------services-------- */
+#services {
+    height: 600px;
+    padding: 30px 0;
+}
+.services-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.service-list-items {
+    width: 30vw;
+    height: 400px;
+    text-align: center;
+    padding-top: 5%;
+}
+.services-sub-title {
+    font-size: 3.8em;
+    margin-bottom: 6%;
+}
+.service-list-items p {
+    margin: 12% 0%;
+}
+.service-list-items a {
+    text-decoration: none;
+    color: #fff;
+    background: #ff004f;
+    border: 2px solid #ff003f;
+    border-radius: 8px;
+}
+
+/* -------------contact------------- */
+#contact {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background: #262626;
+}
+.contact-container .contact-sub-title {
+    width: 60vw;
+    height: 300px;
+    padding-left: 30px;
+}
+.contact-sub-title h1 {
+    font-size: 35px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.heading {
+    font-size: 3.8em;
+    font-weight: 600;
+    position: relative;
+}
+.heading::after {
+    content: "";
+    width: 100%;
+    height: 8px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.contact-sub-title p {
+    font-size: 35px;
+}
+.contact-sub-title p i {
+    rotate: 90deg;
+}
+.social-icons {
+    height: 350px;
+    width: 40vw;
+    padding: 145px 0 0 45px;
+}
+.social-icons ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+.social-icons ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+}
+.social-icons ul li i {
+    color: #548687;
+    font-size: 35px;
+    margin-right: 25px;
+}
+.contact-sub-title i {
+    color: #ff004f;
+    margin-right: 25px;
+}
+.copyright {
+    font-size: 25px;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    font-weight: 300;
+    background: #262626;
+}
+.copyright i {
+    color: #ff004f;
+}
