@@ -19,7 +19,7 @@ header {
     background: url(./mobile.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 75%;
+    background-position-x: 100%;
 }
 .container {
     padding: 35px 4%;
@@ -50,11 +50,13 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    position: relative;
 }
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 700;
 }
 .nav ul li a::after {
     content: "";
@@ -70,12 +72,14 @@ nav ul li a:hover::after {
     width: 100%;
 }
 .header-text {
-    margin-top: 90%;
+    margin-top: 40vh;
 }
 .header-text p {
+    color: #6E8898FF;
     font-size: 40px;
 }
 .header-text h1 {
+    color: #6E8898FF;
     font-size: 60px;
     margin: 40px 0;
 }
@@ -83,7 +87,7 @@ nav ul li a:hover::after {
     color: #ff004f;
 }
 
-/* about me */
+/*---------about me---------*/
 #about {
     padding: 80px 0;
     color: #ababab;
@@ -158,10 +162,11 @@ nav ul li a:hover::after {
     align-items: center;
     margin-top: 50px;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 .service-list-items {
-    width: 30vw;
-    height: 400px;
+    width: 31%;
+    height: 400%;
     text-align: center;
     padding-top: 5%;
 }
@@ -243,6 +248,7 @@ nav ul li a:hover::after {
     font-size: 35px;
     margin-right: 25px;
 }
+
 .contact-sub-title i {
     color: #ff004f;
     margin-right: 25px;
