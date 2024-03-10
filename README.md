@@ -1,2 +1,2 @@
 # My-portfolio-website
-It's an unpublished portfolio website in which my business details are displayed.
+It's my portfolio website in which my detail about myself are displayed.
